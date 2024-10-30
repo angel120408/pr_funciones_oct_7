@@ -1,0 +1,192 @@
+print(" ")#Espacio entre lineas 
+print("Ramirez Torres Angel Manuel De 3°W")#Muestra el nombre del alumno
+print("Numero de control: 1206")#Muestra el numero de control del alumno
+print(" ")#Espacio entre lineas 
+
+print("Ejercicio #1")#Nos muestra el ejercicio 
+print(" ")#Espacio entre lineas 
+def my_function():#Se inicia una funcion
+    print("Hola a las funciones")#Esto es lo que esta dentro de la funcion 
+my_function()#Se cierra la funcion 
+print(" ")#Espacio entre lineas 
+
+print("Ejercicio #2")#Nos muestra el ejercicio 
+print(" ")#Espacio entre lineas
+def my_function():#Se inicia una funcion
+    print("Aunque es lo mismo, Creamos otro mensaje")#Esto es lo que esta dentro de la funcion 
+my_function()#Se cierra la funcion 
+print(" ")#Espacio entre lineas
+
+print("Ejercicio #3")#Nos muestra el ejercicio
+print(" ")#Espacio entre lineas
+def my_function(fname):#Define la funcion con un argumento
+    print(fname + " Refsnes")#Imprime los argumentos 
+my_function("Angel")#Nos muestra el resultado del argumento
+my_function("Michelle")#Nos muestra el resultado del argumento
+my_function("Kate")#Nos muestra el resultado del argumento
+print(" ")#Espacio entre lineas 
+
+print("Ejercicio #4")#Nos muestra el ejercicio
+def my_function(fname, lname):#Define la funcion con dos argumento
+    print(fname + " " + lname)
+    my_function("Angel","Manuel")#Nos muestra el resultado de ambos argumento
+    my_function("Michelle","Camila")#Nos muestra el resultado de ambos argumento
+    my_function("Kate","Bravo")#Nos muestra el resultado de ambos argumento
+print(" ")#Espacio entre lineas
+
+print("Ejercicio #5")#  En este ejercicio nos muestra que debemos de usar dos argumentos ya que si usamos 1 o 3 marcara error 
+print(" ")#espacio entre lineas
+def my_function(fname, lname):#Define la funcion con dos argumento
+    print(fname + " " + lname)#Imprime ambos argumentos 
+my_function("Angel","Ramirez")#Argumentos balidos 
+print(" ")#Espacio entre lineas
+
+print("Ejercicio #6")#Nos muestra que la función recibirá una tupla de argumentos y podrá acceder a los elementos
+print(" ")#Espacio entre lineas
+def my_function(*kids):#Define la funcion con una tupla de argumento
+    print("The youngest child is " + kids[2])#Imprime el argumento con la tupla
+my_function("Correo", "Angel", "Michelle")#Imprime el resultado 
+print(" ")#Espacio entre lineas
+
+print("Ejercicio #7")#Se envian argumentos con la sintaxis clave = valor.
+print(" ")#Espacio entre lineas
+def my_function(child3, child2, child1):#Se inicia la funcion con la sintaxis 
+    print("The youngest child is " + child3)#Se imprime la sintaxis
+my_function(child1 = "Angel", child2 = "Michelle", child3 = "Kate")#Imprime el resultado
+print(" ")#Espacio entre lineas
+
+def my_function(child3, child2, child1):#Se inicia la funcion con la sintaxis 
+    print("The youngest child is " + child2)#Se imprime la sintaxis
+my_function(child1 = "Angel", child2 = "Michelle", child3 = "Kate")#Imprime el resultado
+print(" ")#Espacio entre lineas
+
+def my_function(child3, child2, child1):#Se inicia la funcion con la sintaxis 
+    print("The youngest child is " + child1)#Se imprime la sintaxis
+
+my_function(child1 = "Angel", child2 = "Michelle", child3 = "Kate")#Imprime el resultado
+print(" ")#Espacio entre lineas
+
+print("Ejercicio #8")#Nos muestra como se inicia una funcion con palabras clave
+print(" ")#Espacio entre lineas
+def my_function(**kid):#Se inicia la funcion con argumentos arbitrarios de palabras clave
+    print("His last name is " + kid["lname"])#Imprime las palabras clave
+my_function(fname = "Angel", lname = "Ramirez")#Imprime los argumentos 
+print(" ")#Espacio entre lineas
+def my_function(**kid):#Se inicia la funcion con argumentos arbitrarios de palabras clave
+    print("His last name is " + kid["fname"])#Imprime las palabras clave
+my_function(fname = "Angel", lname = "Ramirez")#Imprime los argumentos 
+print(" ")#Espacio entre lineas
+
+print("Ejercicio #9 ")#Nos muestra el valor de parámetro predeterminado
+print(" ")#Espacio entre lineas
+def my_function(country):# llamamos a la función sin argumento, usamos el valor predeterminado
+    print("I am from " + country)#Imprime el valor predeterminado 
+my_function("Sweden")#Nos muestra el resultado del valor
+my_function("India")#Nos muestra el resultado del valor
+my_function("Cd. Juarez")#Nos muestra el resultado del valor
+my_function("Brazil")#Nos muestra el resultado del valor
+print(" ")#Espacio entre lineas
+
+print("Ejercicio #10")#En este ejercicio nos muestra como pasa de una lista a un argumento 
+print(" ")#Espacio entre lineas
+def my_function(food):#Se crea la funcion pero pasar una lista como argumento
+    for x in food:()#Imprime el argumento 
+    print(x)
+
+fruits = ["Fresa", "banana", "Uva"]#Argumentos a elegir 
+my_function(fruits)#Imprime el argumento final 
+print(" ")#Espacio entre lineas
+
+print("Ejercicio #11")#En este ejercicio regresa los valores
+print(" ")#Espacio entre lineas
+
+def my_function(x):#Se crea la funcion devolviendo valores 
+    return 9 * x
+
+print(my_function(3))#Nos muestra el resultado pero devuelve un valor 
+print(my_function(5))#Nos muestra el resultado pero devuelve un valor 
+print(my_function(9))#Nos muestra el resultado pero devuelve un valor 
+print(" ")#Espacio entre lineas
+
+print("Ejercicio #12")#Nos muestra la declaración del pass
+print(" ")#Espacio entre lineas
+def myfunction():#Se crea la funcion declarando el pass
+    pass#Ingnora la condicion 
+print(" ")#Espacio entre lineas
+
+print("Ejercicio #13")#Nos muestra com hay argumentos posicionales 
+print(" ")#Espacio entre lineas
+
+def my_function(x, /):#Se crea la funcion con argumentos posicionales 
+    print(x)#Se crea la variable 
+    return 9 / x
+
+my_function(3)#Se imprime el resultado 
+print(" ")#Espacio entre lineas
+
+print("Ejercico #14")#Sin , / en realidad se le permite usar argumentos de palabras clave
+print(" ")#Espacio entre lineas
+
+def my_function(x):#Se inicia la funcion con los argumentos 
+    x = 6 + 12#Nos muestra el valor de x
+    print("6 + 12 = ", x)#Imprime la suma 
+
+my_function(x = 16)#Determina el valor de la funcion 
+print(" ")#Espacio entre lineas
+
+print("Ejercicio # 15")#Al agregar , / obtendrá un error si intenta enviar un argumento de palabra clave
+print(" ")#Espacio entre lineas
+
+
+
+print("Ejercicio #16")#Se crean argumentos con palabras clave
+print(" ")#Espacio entre lineas
+
+def my_function(*, x):#Se crea la funcion con *
+    print(x)#Imprime el valor
+    
+my_function(x = 3)#Valor de la funcion 
+print(" ")#Espacio entre lineas
+
+print("Ejercicio #17")#Se permite utilizar argumentos posicionales
+print(" ")#Espacio entre lineas
+
+def my_function(x):#Se crea la fuuncion con los argumentos 
+    
+    x = 3 * 6#Operacion 
+    print("3 * 6 =", x )#Imprime el resultado de la operacioin 
+
+my_function(18)#Valor final 
+print(" ")#Espacio entre lineas
+
+print("Ejercicio #18")#Pero al agregar *, / obtendrás un error si intentas enviar un argumento posicional
+print(" ")#Espacio entre lineas
+
+def my_function(*, x):#Se crea la funcion 
+    print(x)#Imprime el resultado 
+
+my_function(x = 5)#Le da el valor a la variable "x"
+print(" ")#Espacio entre lineas
+
+print("Ejercicio #19")#solo posicional y solo palabras clave
+print(" ")#Espacio entre lineas
+
+def my_function(a, b, /, *, c, d):#Se crea la funcion con variables 
+    print(a + b + c + d)#Se imprime la suma de variables 
+
+my_function(8, 14, c = 3, d = 10)#Se le da el valor a las variables 
+print(" ")#Espacio entre lineas
+
+print("Ejercicio #20")#Aqui acepta la recursividad de funciones
+print(" ")#Espacio entre lineas
+
+def tri_recursion(k):
+    if(k > 0):
+        result = k + tri_recursion(k - 1)
+        print(result)
+    else:
+        result = 0
+        return result
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)
